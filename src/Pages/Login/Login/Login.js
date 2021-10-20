@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import './Login.css';
 import useAuth from '../../../hooks/useAuth';
+import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { handleGoogleSignIn, setUser, setIsLoading } = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/';
     const onSubmit = (data) => {
         // e.preventDefault();
         console.log(data);
@@ -15,6 +19,7 @@ const Login = () => {
     const handleGoogleLogin = () => {
         handleGoogleSignIn()
             .then(result => {
+                history.push(redirect_uri);
                 setUser(result.user);
                 setIsLoading(false);
             })

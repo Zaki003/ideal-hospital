@@ -6,6 +6,9 @@ import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Register/Register';
+import Services from './Pages/Home/Services/Services';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import SingleService from './Pages/SingleService/SingleService';
 
 function App() {
   return (
@@ -20,6 +23,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <PrivateRoute path="/services/:serviceId">
+              <SingleService></SingleService>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

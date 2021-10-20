@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <nav className="links my-auto text-green-600 text-xl">
                 <Link to="/home">Home</Link>
-                <Link to="/Services">Services</Link>
+                <Link to="/services">Services</Link>
                 <Link to="/about">About us</Link>
                 {
                     (user.displayName || user.email) ?
