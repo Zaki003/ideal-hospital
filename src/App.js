@@ -10,6 +10,7 @@ import Services from './Pages/Home/Services/Services';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import SingleService from './Pages/SingleService/SingleService';
 import Footer from './Pages/Shared/Footer/Footer';
+import About from './Pages/AboutUs/About';
 
 function App() {
   return (
@@ -24,15 +25,18 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/services">
+            <PrivateRoute exact path="/services">
               <Services></Services>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/services/:serviceId">
               <SingleService></SingleService>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/about">
+              <About></About>
+            </PrivateRoute>
             <Route path="/register">
               <Register></Register>
             </Route>

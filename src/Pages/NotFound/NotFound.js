@@ -1,9 +1,11 @@
 import React from 'react';
+import img404 from '../../images/404.jpg';
 
 const NotFound = () => {
     return (
-        <div>
-            <h3 className="text-3xl">404 not found</h3>
+        <div className="flex justify-center">
+
+            <img src={img404} alt="" />
         </div>
     );
 };
