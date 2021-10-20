@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "img": "https://image.freepik.com/free-photo/newborn-baby_53876-139515.jpg",
+        "name": "Mom and babycare",
+        "price": 10000,
+        "shortDescription": "We are committed to serve mother and newborn baby with full dedication. We have an environment which will ensure mother and baby as if they are in their own home.",
+        "LongDescription": "We are committed to serve mother and newborn baby with full dedication. We have an environment which will ensure mother and baby as if they are in their own home. Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you and your child.",
+        "assignedDoctor": [
+            "Dr. Fatima Jahan, MBBS, FCPS(gaynecology)"
+        ]
+    },
+    {
+        "id": 2,
+        "img": "https://image.freepik.com/free-photo/physician-doctor-discussing-illness-treatment-writing-medical-symptom-clipboard_482257-10588.jpg",
+        "name": "Cardiology",
+        "price": 20000,
+        "shortDescription": "Facing problems with your precious heart? Don't worry at all! We are here to take care of your heart. From simple checkup to complex surgery, every services are available here.",
+        "LongDescription": "Facing problems with your precious heart? Don't worry at all! We are here to take care of your heart. From simple checkup to complex surgery, every services are available here. Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you and your child.",
+        "assignedDoctor": [
+            "Dr. Ferdous Bappi, MBBS, FCPS(cardiology)",
+            "Dr. Atif Chowdhury, MBBS, FCPS(surgeon)"
+        ]
+    },
+    {
+        "id": 3,
+        "img": "https://image.freepik.com/free-photo/dentist-nurse-treat-patient-dental-office_85574-3.jpg",
+        "name": "Dentalogy",
+        "price": 5000,
+        "shortDescription": "Pain in your teeth? Cannot eat properly cause of the pain? Need to scale or root canal your teeth? We provide the nicest and comfortable services in a comperatively less price. Let your teeth be healthy!",
+        "LongDescription": "Pain in your teeth? Cannot eat properly cause of the pain? Need to scale or root canal your teeth? We provide the nicest and comfortable services in a comperatively less price. Let your teeth be healthy! Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you.",
+        "assignedDoctor": [
+            "Dr. Himel Kumar, BDS, FCPS(dentology)"
+        ]
+    },
+    {
+        "id": 4,
+        "img": "https://image.freepik.com/free-photo/doctor-doing-check-patient-with-skin-cancer_23-2148988511.jpg",
+        "name": "Cancer Treatment",
+        "price": 50000,
+        "shortDescription": "We have the expertise and technologies to diagnose , test and treat many types of cancer patients. We provide Radiotherapy, Cameotherapy and other terapies for our cancer patients.",
+        "LongDescription": "We have the expertise and technologies to diagnose , test and treat many types of cancer patients. We provide Radiotherapy, Cameotherapy and other terapies for our cancer patients. Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you.",
+        "assignedDoctor": [
+            "Dr. Faiaz Sakib, MBBS, FCPS(Surgeon)",
+            "Dr. Jesmine Mane, MBBS, FCPS(Cancer specialist)"
+        ]
+    },
+    {
+        "id": 5,
+        "img": "https://image.freepik.com/free-photo/happy-doctor-holding-clipboard-with-patients_1098-2176.jpg",
+        "name": "Medicine Department",
+        "price": 2000,
+        "shortDescription": "Suffering from fever or any common diseases? We have a group of very skilled medical practitioners who will treat you with the time and attention you need. You'll be provided with services without waiting for long.",
+        "LongDescription": "Suffering from fever or any common diseases? We have a group of very skilled medical practitioners who will treat you with the time and attention you need. You'll be provided with services without waiting for long. Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you.",
+        "assignedDoctor": [
+            "Dr. Jahid Alam, MBBS, FCPS(Medicine)",
+            "Dr. Rupa Aktar, MBBS)"
+        ]
+    },
+    {
+        "id": 6,
+        "img": "https://image.freepik.com/free-photo/young-male-psysician-with-patient-measuring-blood-pressure_1303-17877.jpg",
+        "name": "Diagnostic center",
+        "price": 8000,
+        "shortDescription": "We also have Diagnostic and pathology department. Some experienced and smiling faces will be awaiting for you to provide 25 different types of tests to diagnose your disease efficiently.",
+        "LongDescription": "We also have Diagnostic and pathology department. Some experienced and smiling faces will be awaiting for you to provide 25 different types of tests to diagnose your disease efficiently. Our health stuffs are really kind and sincere about their job. You will find the best services available in the city. Our Specialist doctors and nurses will take great care for you.",
+        "assignedDoctor": [
+            "Jalal Uddin, Diploma(pathology)"
+        ]
+    }
+]

@@ -6,7 +6,8 @@ import logo from '../../../logo.png';
 import './Header.css';
 
 const Header = () => {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
+    // console.log(user);
     return (
         <div className="header bg-gray-100 p-6 sticky top-0">
             <div id="logo-text" className="lg:mr-48 mr-8">
@@ -17,9 +18,14 @@ const Header = () => {
                 <Link to="/home">Home</Link>
                 <Link to="/Services">Services</Link>
                 <Link to="/about">About us</Link>
-                <Link to="/login">Login</Link>
+                {
+                    (user.displayName || user.email) ?
+                        <button onClick={logout} className="bg-pink-500 text-white px-4 py-2 rounded-lg">Logout</button>
+                        :
+                        <Link to="/login">Login</Link>
+                }
             </nav>
-            {user.email ? <span>Signed in as: {user.displayName}</span> : <span></span>}
+            {(user.displayName || user.email) ? <span className="text-black my-auto mx-auto text-xl">Signed in as: {user.displayName}</span> : <span></span>}
         </div>
     );
 };

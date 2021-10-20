@@ -1,0 +1,13 @@
+.details-btn{
+    display: block;
+    width: 40%;
+    background: #ec5990;
+    color: white;
+    border: none;
+    margin: 1rem auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+}
