@@ -17,6 +17,7 @@ const useFirebase = () => {
     };
 
     const handleRegister = (name, email, password) => {
+        setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user);
@@ -35,10 +36,12 @@ const useFirebase = () => {
             } else {
                 setUser({});
             }
+            setIsLoading(false);
         });
     }, [auth]);
 
     const logout = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({});

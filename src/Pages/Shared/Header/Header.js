@@ -25,7 +25,7 @@ const Header = () => {
                         <Link to="/login">Login</Link>
                 }
             </nav>
-            {(user.displayName || user.email) ? <span className="text-black my-auto mx-auto text-xl">Signed in as: {user.displayName}</span> : <span></span>}
+            {(user.displayName || user.email) ? <span className="text-black my-auto mx-auto text-xl">Signed in as: {user.displayName}</span> : <span className="text-black my-auto mx-auto text-xl">Not Signed In</span>}
         </div>
     );
 };
