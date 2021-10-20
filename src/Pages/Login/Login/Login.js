@@ -7,13 +7,17 @@ import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const { handleGoogleSignIn, setUser, setIsLoading } = useAuth();
+    const { handleGoogleSignIn, handleEmailSignIn, setUser, setIsLoading, user } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/';
     const onSubmit = (data) => {
         // e.preventDefault();
         console.log(data);
+        // if (data.password !== user.password) {
+        //     return <h3>Password Invalid</h3>
+        // }
+        handleEmailSignIn(data.email, data.password);
 
     };
     const handleGoogleLogin = () => {

@@ -29,7 +29,7 @@ const Register = () => {
                         <input type="email" placeholder="Your Email" defaultValue="" {...register("email", { required: true })} />
                         <input type="password" placeholder="Your Password" {...register("password", { required: true })} />
                         <input type="password" placeholder="Confirm Password" {...register("confirmedPassword", { required: true })} />
-                        {(errors.email || errors.password) && <span style={{ color: "red" }}>This field is required</span>}
+                        {(errors.name || errors.email || errors.password || errors.confirmedPassword) && <span style={{ color: "red" }}>This field is required</span>}
 
                         <input type="submit" />
                     </form>
